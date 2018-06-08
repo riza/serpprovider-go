@@ -34,7 +34,7 @@ func main() {
 
 **Version 1.0**
 - Initial
--
+
 ## Support
 - <img src="https://images.coinviewer.io/currencies/16x16/bitcoin.png" />  **BTC** : 3FSL583ncizWvMrEBZSN2o6K2uudyDZyby *(Min 0.0005 BTC)*
 - <img src="https://images.coinviewer.io/currencies/16x16/ethereum.png" /> **ETH** : 0x8e12150a778707729cfd7971e308a9293888549d *(Min 0.001 ETH)*
