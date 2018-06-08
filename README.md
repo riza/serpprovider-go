@@ -28,13 +28,18 @@ func main() {
   fmt.Print(res)
 }
 ```
+### Country and language codes
 
+-   [Google country codes](http://serpprovider.com/serp-api/google-country-codes)
+-   [Google language codes](http://serpprovider.com/serp-api/google-language-codes)
+-   [Bing country codes](http://serpprovider.com/serp-api/bing-country-codes)
+-   [Bing language codes](http://serpprovider.com/serp-api/bing-country-codes)
 
 ## Changelog
 
 **Version 1.0**
 - Initial
-
+-
 ## Support
 - <img src="https://images.coinviewer.io/currencies/16x16/bitcoin.png" />  **BTC** : 3FSL583ncizWvMrEBZSN2o6K2uudyDZyby *(Min 0.0005 BTC)*
 - <img src="https://images.coinviewer.io/currencies/16x16/ethereum.png" /> **ETH** : 0x8e12150a778707729cfd7971e308a9293888549d *(Min 0.001 ETH)*
