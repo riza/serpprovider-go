@@ -14,7 +14,8 @@ package main
 
 import (
     "github.com/riza/serpprovider-go"
- "fmt")
+    "fmt"
+ )
 
 func main() {
 

@@ -72,6 +72,7 @@ func New(APIKey string) *SearchRequest {
 
 func (req *SearchRequest) Request(reqVals *SearchRequest) SerpMainResponse {
 
+
 	var response SerpMainResponse;
 
 	if reqVals.Query == "" {
@@ -100,7 +101,11 @@ func (req *SearchRequest) Request(reqVals *SearchRequest) SerpMainResponse {
 		req.Mode = reqVals.Mode;
 	}
 
-	req.Query = reqVals.Query;
+
+
+	req.Query = &url.URL{Path: reqVals.Query}
+	req.Query = t.String()
+
 
 	url := fmt.Sprintf(
 		BaseUrl,
