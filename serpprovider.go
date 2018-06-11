@@ -6,6 +6,7 @@ import (
 	"github.com/parnurzeal/gorequest"
 	"strings"
 	"strconv"
+	"net/url"
 )
 
 var (
@@ -103,9 +104,8 @@ func (req *SearchRequest) Request(reqVals *SearchRequest) SerpMainResponse {
 
 
 
-	req.Query = &url.URL{Path: reqVals.Query}
-	req.Query = t.String()
-
+	paramEncode := &url.URL{Path: reqVals.Query}
+	req.Query = paramEncode.String()
 
 	url := fmt.Sprintf(
 		BaseUrl,
@@ -113,7 +113,7 @@ func (req *SearchRequest) Request(reqVals *SearchRequest) SerpMainResponse {
 		req.Engine,
 		fmt.Sprintf("%s-%s", req.Language, req.Country),
 		req.Device,
-		strings.Replace(req.Query," ","+",-1),
+		strings.Replace(req.Query,"%20","+",-1),
 	);
 
 	request := gorequest.New().Get(url)
